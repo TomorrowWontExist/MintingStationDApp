@@ -10,6 +10,9 @@ https://gateway.pinata.cloud/ipfs/QmYCufo3n1K78YYBYMs5zmRGFHY5C2apPerM9P6Git93tT
 
 // ^^ IPNS Static never changes, when you add file to folder, update CID of folder to be the new routed IPNS. + app.Pinata.cloud
 
+Validate your metadata  
+https://testnets-api.opensea.io/asset/<your_contract_address>/<your_token_id>/validate/ 
+https://api.opensea.io/asset/<your_contract_address>/<your_token_id>/validate/ 
 
 Pre Req Downloads
 How to install .Git https://phoenixnap.com/kb/how-to-install-git-windows
@@ -19,6 +22,9 @@ How to install NPM https://docs.npmjs.com/downloading-and-installing-node-js-and
 How to isntall Yarn https://classic.yarnpkg.com/en/docs/install/#windows-stable
 
 
+How to install React App to Node https://github.com/gitname/react-gh-pages
+npm install gh-pages --save-dev
+
 Need to know commands... 
 
 npm install
@@ -27,14 +33,19 @@ npm run deploy // Use for this Dapp
 npm run build
 
 git clone (repo copy/paste)
+git init
 git add .
 git status
 git commit -m "msg"
-git push origin main
+git pull origin main // after git clone run this for scratch project setup
+git push origin main // pushes to github
+git remote remove origin
+git remote add origin "insert URL to repo with no .git at the end"
+git push -u origin main (master) // if git push origin main doesnt work
+git push --force origin main (master) // last resort
 
-yarn install
-yarn add all
-clear
+yarn install // Try not to mix npm and yarn in the same terminal
+yarn add all // only use yarn add all if git clone and npm install fails
 
 Ethereum netowrk = 1  // Change this in blockchainActions.js line 54
 Rinkby = 4
@@ -64,3 +75,5 @@ npm run deploy
 git add .
 git commit -m "description message"
 git push origin main
+
+Grats you are live! Go Shill your NFT Project!!
