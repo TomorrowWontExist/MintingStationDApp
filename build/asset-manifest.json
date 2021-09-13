@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.51fa0b2f.chunk.css",
-    "main.js": "/static/js/main.4d3899c8.chunk.js",
-    "main.js.map": "/static/js/main.4d3899c8.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.191fca3b.js",
-    "runtime-main.js.map": "/static/js/runtime-main.191fca3b.js.map",
-    "static/js/2.4740e39e.chunk.js": "/static/js/2.4740e39e.chunk.js",
-    "static/js/2.4740e39e.chunk.js.map": "/static/js/2.4740e39e.chunk.js.map",
-    "static/js/3.a64233a7.chunk.js": "/static/js/3.a64233a7.chunk.js",
-    "static/js/3.a64233a7.chunk.js.map": "/static/js/3.a64233a7.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.51fa0b2f.chunk.css.map": "/static/css/main.51fa0b2f.chunk.css.map",
-    "static/js/2.4740e39e.chunk.js.LICENSE.txt": "/static/js/2.4740e39e.chunk.js.LICENSE.txt",
-    "static/media/1.75f03515.png": "/static/media/1.75f03515.png",
-    "static/media/reset.css": "/static/media/PressStart2P-Regular.f2341734.woff"
+    "main.css": "/tbcnft/static/css/main.741ee34a.chunk.css",
+    "main.js": "/tbcnft/static/js/main.4d3899c8.chunk.js",
+    "main.js.map": "/tbcnft/static/js/main.4d3899c8.chunk.js.map",
+    "runtime-main.js": "/tbcnft/static/js/runtime-main.6e67e627.js",
+    "runtime-main.js.map": "/tbcnft/static/js/runtime-main.6e67e627.js.map",
+    "static/js/2.c1754234.chunk.js": "/tbcnft/static/js/2.c1754234.chunk.js",
+    "static/js/2.c1754234.chunk.js.map": "/tbcnft/static/js/2.c1754234.chunk.js.map",
+    "static/js/3.a64233a7.chunk.js": "/tbcnft/static/js/3.a64233a7.chunk.js",
+    "static/js/3.a64233a7.chunk.js.map": "/tbcnft/static/js/3.a64233a7.chunk.js.map",
+    "index.html": "/tbcnft/index.html",
+    "static/css/main.741ee34a.chunk.css.map": "/tbcnft/static/css/main.741ee34a.chunk.css.map",
+    "static/js/2.c1754234.chunk.js.LICENSE.txt": "/tbcnft/static/js/2.c1754234.chunk.js.LICENSE.txt",
+    "static/media/1.75f03515.png": "/tbcnft/static/media/1.75f03515.png",
+    "static/media/reset.css": "/tbcnft/static/media/PressStart2P-Regular.f2341734.woff"
   },
   "entrypoints": [
-    "static/js/runtime-main.191fca3b.js",
-    "static/js/2.4740e39e.chunk.js",
-    "static/css/main.51fa0b2f.chunk.css",
+    "static/js/runtime-main.6e67e627.js",
+    "static/js/2.c1754234.chunk.js",
+    "static/css/main.741ee34a.chunk.css",
     "static/js/main.4d3899c8.chunk.js"
   ]
 }
