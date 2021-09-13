@@ -53,6 +53,6 @@
   },
   "devDependencies": {
     "gh-pages": "^3.2.3",
-    "truffle-plugin-verify": "^0.5.14"
+    "truffle-plugin-verify": "^0.5.15"
   }
 }
