@@ -14,7 +14,7 @@ export const StyledButton = styled.button`
   padding: 10px;
   font-weight: bold;
   color: #000000;
-  width: 100px;
+  width: 300px;
   cursor: pointer;
   box-shadow: 0px 6px 0px -2px rgba(250, 250, 250, 0.3);
   -webkit-box-shadow: 0px 6px 0px -2px rgba(250, 250, 250, 0.3);
@@ -42,8 +42,8 @@ export const StyledImg = styled.img`
   width: 200px;
   height: 200px;
   @media (min-width: 767px) {
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
   }
   transition: width 0.5s;
   transition: height 0.5s;
@@ -96,19 +96,19 @@ function App() {
 
   return (
     <s.Screen style={{ backgroundColor: "var(--black)" }}>
-      <s.Container flex={1} ai={"center"} style={{ padding: 56 }}>
+      <s.Container flex={1} ai={"center"} style={{ padding: 18 }}>
         <s.TextTitle
-          style={{ textAlign: "center", fontSize: 28, fontWeight: "bold" }}
+          style={{ textAlign: "center", fontSize: 48, fontWeight: "bold" }}
         >
           The Bee Collaborative NFT Minting Station
         </s.TextTitle>
         <s.SpacerMedium />
-        <ResponsiveWrapper flex={1} style={{ padding: 24 }}>
+        <ResponsiveWrapper flex={1} style={{ padding: 18 }}>
           <s.Container flex={1} jc={"center"} ai={"center"}>
             <StyledImg alt={"example"} src={i1} />
             <s.SpacerMedium />
             <s.TextTitle
-              style={{ textAlign: "center", fontSize: 35, fontWeight: "bold" }}
+              style={{ textAlign: "center", fontSize: 26, fontWeight: "bold" }}
             >
               {data.totalSupply}/10000
             </s.TextTitle>
@@ -118,7 +118,7 @@ function App() {
             flex={1}
             jc={"center"}
             ai={"center"}
-            style={{ backgroundColor: "#000000", padding: 24 }}
+            style={{ backgroundColor: "#000000", padding: 18 }}
           >
             {Number(data.totalSupply) == 10000 ? (
               <>
@@ -196,11 +196,11 @@ function App() {
         </ResponsiveWrapper>
         <s.SpacerSmall />
         <s.Container jc={"center"} ai={"center"} style={{ width: "70%" }}>
-          <s.TextDescription style={{ textAlign: "center", fontSize: 12 }}>
+          <s.TextDescription style={{ textAlign: "center", fontSize: 18 }}>
             50% of all proceeds go towards Liquidity for TBC Token and the Charity Rewards Program
           </s.TextDescription>
           <s.SpacerSmall />
-          <s.TextDescription style={{ textAlign: "center", fontSize: 12 }}>
+          <s.TextDescription style={{ textAlign: "center", fontSize: 14 }}>
             Bee Rewarded to help Save the Bees #TBCToken #TWEFamily
           </s.TextDescription>
         </s.Container>

@@ -124,7 +124,7 @@ table {
 }
 
 @font-face {
-  font-family: "coder";
+  font-family: "none";
   src: local("coder"),
     url(../assets/fonts/PressStart2P-Regular.woff) format("woff");
 }
