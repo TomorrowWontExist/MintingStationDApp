@@ -99,15 +99,15 @@ function App() {
 
   return (
     <s.Screen style={{ backgroundColor: "var(--black)" }}>
-      <s.Container flex={1} ai={"center"} style={{ padding: 18 }}>
+      <s.Container flex={1} ai={"center"} style={{ padding: 12 }}>
         <s.TextTitle
-          style={{ textAlign: "center", fontSize: 48, fontWeight: "bold" }}
+          style={{ textAlign: "center", fontSize: 36, fontWeight: "bold" }}
         >
           The Bee Collaborative NFT Minting Hive
           
         </s.TextTitle>
         <s.SpacerMedium />
-        <ResponsiveWrapper flex={1} style={{ padding: 18 }}>
+        <ResponsiveWrapper flex={1} style={{ padding: 12 }}>
           <s.Container flex={1} jc={"center"} ai={"center"}>
             <StyledImg alt={"example"} src={i1} />
             <s.SpacerMedium />
@@ -122,7 +122,7 @@ function App() {
             flex={1}
             jc={"center"}
             ai={"center"}
-            style={{ backgroundColor: "#000000", padding: 18 }}
+            style={{ backgroundColor: "#000000", padding: 12 }}
           >
             {Number(data.totalSupply) == 10000 ? (
               <>
@@ -169,7 +169,7 @@ function App() {
                         getData();
                       }}
                     >
-                      CONNECT
+                      CONNECT WALLET
                     </StyledButton>
                     {blockchain.errorMsg !== "" ? (
                       <>
