@@ -56,7 +56,8 @@ Change Contract Address in src/redux/blockchain/blockchainAction.js line 57
 Change total supply on App.js lines 113 and 123
 Change price of each NFT line 71
 
-Add github.io domain to package.json line 27 
+How to Deploy DAPP the EASY way with free github.io domain https://www.youtube.com/watch?v=pYHTCmhK734
+Add github.io free hosting domain to package.json line 27 
 "homepage": "http://TomorrowWontExist.github.io/tbcnft", // "username".github.io/"repo"
 
 Add these to lines 33-34

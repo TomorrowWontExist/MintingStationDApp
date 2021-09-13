@@ -16,13 +16,16 @@ export const StyledButton = styled.button`
   color: #000000;
   width: 300px;
   cursor: pointer;
-  box-shadow: 0px 6px 0px -2px rgba(250, 250, 250, 0.3);
-  -webkit-box-shadow: 0px 6px 0px -2px rgba(250, 250, 250, 0.3);
-  -moz-box-shadow: 0px 6px 0px -2px rgba(250, 250, 250, 0.3);
+  box-shadow: 2px 8px 4px -2px rgba(250, 250, 0, 0.5);
+  -webkit-box-shadow: 2px 3px 10px -2px rgba(250, 250, 0, 0.5);
+  -moz-box-shadow: 2px 8px 4px -2px rgba(250, 250, 0, 0.5);
   :active {
     box-shadow: none;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
+  }
+  :hover {
+    -webkit-box-shadow: 2px 3px 40px -2px rgba(250, 250, 0, 0.9);
   }
 `;
 
@@ -60,7 +63,7 @@ function App() {
     if (_amount <= 0) {
       return;
     }
-    setFeedback("Minting your Twee the Bee NFT...");
+    setFeedback("Preparing your Twee the Bee NFT...");
     setClaimingNft(true);
     blockchain.smartContract.methods
       .mint(blockchain.account, _amount)
@@ -100,7 +103,8 @@ function App() {
         <s.TextTitle
           style={{ textAlign: "center", fontSize: 48, fontWeight: "bold" }}
         >
-          The Bee Collaborative NFT Minting Station
+          The Bee Collaborative NFT Minting Hive
+          
         </s.TextTitle>
         <s.SpacerMedium />
         <ResponsiveWrapper flex={1} style={{ padding: 18 }}>
@@ -143,7 +147,7 @@ function App() {
                 </s.TextTitle>
                 <s.SpacerXSmall />
                 <s.TextDescription style={{ textAlign: "center" }}>
-                  excluding gas fee
+                  -excluding gas fee-
                 </s.TextDescription>
                 <s.SpacerLarge />
                 <s.SpacerSmall />
@@ -197,11 +201,11 @@ function App() {
         <s.SpacerSmall />
         <s.Container jc={"center"} ai={"center"} style={{ width: "70%" }}>
           <s.TextDescription style={{ textAlign: "center", fontSize: 18 }}>
-            50% of all proceeds go towards Liquidity for TBC Token and the Charity Rewards Program
+            50% of all proceeds go towards Charity and adding Liquidity to TBC Token
           </s.TextDescription>
           <s.SpacerSmall />
           <s.TextDescription style={{ textAlign: "center", fontSize: 14 }}>
-            Bee Rewarded to help Save the Bees #TBCToken #TWEFamily
+            Bee Rewarded to help Save the Bees #TBCToken<p/>*.*.*Launching Soon*.*.*
           </s.TextDescription>
         </s.Container>
       </s.Container>
