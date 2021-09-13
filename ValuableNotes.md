@@ -27,6 +27,7 @@ npm run build
 
 git clone (repo copy/paste)
 git add .
+git status
 git commit -m "msg"
 git push origin main
 
