@@ -5,7 +5,7 @@ Published to <IPNS>: /ipfs/(new CID)
 
 // https://gateway.ipfs.io/ipns/k51qzi5uqu5dhl0enp0dupzorbyhsmsdj1aewjbghr0se5kb1w1s65dof038g5
 
-TBCNFT URI for metadata = NFT image location
+TBCNFT URI for metadata = NFT image location, use IPNS for generating your NFTs metadata
 https://gateway.pinata.cloud/ipfs/QmYCufo3n1K78YYBYMs5zmRGFHY5C2apPerM9P6Git93tT/
 
 // ^^ IPNS Static never changes, when you add file to folder, update CID of folder to be the new routed IPNS. + app.Pinata.cloud

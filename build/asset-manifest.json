@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/tbcnft/static/css/main.741ee34a.chunk.css",
-    "main.js": "/tbcnft/static/js/main.fe48d2be.chunk.js",
-    "main.js.map": "/tbcnft/static/js/main.fe48d2be.chunk.js.map",
+    "main.js": "/tbcnft/static/js/main.055dda80.chunk.js",
+    "main.js.map": "/tbcnft/static/js/main.055dda80.chunk.js.map",
     "runtime-main.js": "/tbcnft/static/js/runtime-main.6e67e627.js",
     "runtime-main.js.map": "/tbcnft/static/js/runtime-main.6e67e627.js.map",
     "static/js/2.c1754234.chunk.js": "/tbcnft/static/js/2.c1754234.chunk.js",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.6e67e627.js",
     "static/js/2.c1754234.chunk.js",
     "static/css/main.741ee34a.chunk.css",
-    "static/js/main.fe48d2be.chunk.js"
+    "static/js/main.055dda80.chunk.js"
   ]
 }
