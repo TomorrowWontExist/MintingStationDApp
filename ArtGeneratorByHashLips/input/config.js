@@ -4,9 +4,9 @@ const height = 1200;
 const dir = __dirname;
 const description = "This NFT is part of The Bee Collaborative Collection | Save the Bees with NFTs!";
 const baseImageUri = "https://gateway.ipfs.io/ipns/k51qzi5uqu5dhl0enp0dupzorbyhsmsdj1aewjbghr0se5kb1w1s65dof038g5";
-const startEditionFrom = 1; // Can start edition at whatever you want // start at 1
+const startEditionFrom = 1; // Can start edition at whatever you want 
 const endEditionAt = 10; // endEditionAt and edtionSize MUST be the SAME // start at 10 for testing purposes
-const editionSize = 10; // this will print 100 copies : (use if you already have a 10k 1 1st edition) // erase the 100
+const editionSize = 10; // this will print 100 copies : (use if you already have a 10k 1 1st edition)
 const raceWeights = [
   {
     value: "TweeTheBee", // Change to whatever you want
