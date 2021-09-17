@@ -43,8 +43,10 @@ How to install .Git https://phoenixnap.com/kb/how-to-install-git-windows<p/>
 How to install Ganache https://www.trufflesuite.com/docs/ganache/quickstart<p/>
 How to isntall Yarn https://classic.yarnpkg.com/en/docs/install/#windows-stable<p/>
 How to install IPFS https://ipfs.io/#install<p/>
-Also make an Account at Github.com - You're going to need this!
-<p/><p/>
+Also make an Account at Github.com - You're going to need this!<p/>
+<p/>
+You will also need to be logged in to your Wallet with Metamask and have Rinkby Test Ethereum, you can get it here https://faucet.rinkeby.io/ - Tweet your wallet address, copy the tweet link and paste it in the Address box at the website. Click 18.75 ETH / 3 days
+<p/>
 How to install React App to Node https://github.com/gitname/react-gh-pages<p/>
 npm install gh-pages --save-dev // Deploying Front End Dapp (minting station) to Github<p/>
 <p/>
