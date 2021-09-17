@@ -160,7 +160,7 @@ const startCreating = async () => {
         elementArray.forEach((element) => {
           drawElement(element);
         });
-        signImage(`#${editionCount}`);
+        signImage(`#${editionCount}`); // add // beginning of this line to turn #s at top left off
         saveImage(editionCount);
         addMetadata(newDna, editionCount);
         saveMetaDataSingleFile(editionCount);

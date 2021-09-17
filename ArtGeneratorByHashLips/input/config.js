@@ -1,5 +1,5 @@
 const fs = require("fs");
-const width = 750;
+const width = 750; // Change to the resolution you want
 const height = 1200;
 const dir = __dirname;
 const description = "This NFT is part of The Bee Collaborative Collection | Save the Bees with NFTs!";
@@ -17,7 +17,7 @@ const raceWeights = [
 
 const races = {
   TweeTheBee: { // Must bee the same as value on line 12 | ALL CAPITALIZATIONS MATTER
-    name: "TweeTheBee", 
+    name: "TweeTheBee", // Make same as above
     layers: [
       {
         name: "Background",
@@ -25,44 +25,38 @@ const races = {
           { 
             id: 0,
             name: "Astronaut",
-            path: `${dir}/1-background/astronaut.png`, // 1-backround = folder name/png name
-            weight: 70,
+            path: `${dir}/1-background/astronaut.png`, // 1-backround = folder name/image name
+            weight: 100, // 16%   Every gap in numbers is = to % of rarity chance
           },
           {
             id: 1,
             name: "Blue Spiral",
             path: `${dir}/1-background/bluespiral.png`,
-            weight: 69,
+            weight: 84, // 16%    
           },
           {
             id: 2,
-            name: "Dark Swirl",
-            path: `${dir}/1-background/darkswirl_r.png`,
-            weight: 68,
+            name: "Lightening",
+            path: `${dir}/1-background/lightening_r.png`,
+            weight: 68, // 17%  --  68 + 17% = 84 Weight of the next one up
           },
           {
             id: 3,
-            name: "Sherbert",
-            path: `${dir}/1-background/sherbert.png`,
-            weight: 67,
+            name: "Dancefloor",
+            path: `${dir}/1-background/dancefloor_r.png`,
+            weight: 51, //17%
           },
           {
             id: 4,
             name: "Acryllica",
             path: `${dir}/1-background/acryllica.png`,
-            weight: 65,
+            weight: 34, // 17%
           },
           {
             id: 5,
             name: "BadAcid",
             path: `${dir}/1-background/badacid.png`,
-            weight: 63,
-          },
-          {
-            id: 6,
-            name: "Blurple",
-            path: `${dir}/1-background/blurple.png`,
-            weight: 62,
+            weight: 17, // 17%
           },
         ],
         position: { x: 0, y: 0 },
@@ -73,39 +67,45 @@ const races = {
         elements: [
           {
             id: 0,
-            name: "Alien Egg",
-            path: `${dir}/2-extra/alienegg.png`,
-            weight: 70,
+            name: "none",
+            path: `${dir}/2-extra/none.png`,
+            weight: 100, // 10%
           },
           {
             id: 1,
-            name: "Bald Eagle",
-            path: `${dir}/2-extra/bald eagle.png`,
-            weight: 69,
+            name: "Spooky",
+            path: `${dir}/2-extra/spooky_ur.png`,
+            weight: 90, // 15%
           },
           {
             id: 2,
-            name: "Bees",
-            path: `${dir}/2-extra/bees.png`,
-            weight: 68,
+            name: "Devil Tail",
+            path: `${dir}/2-extra/devil tail_ur.png`,
+            weight: 75, // 15%
           },
           {
             id: 3,
-            name: "Blood",
-            path: `${dir}/2-extra/blood.png`,
-            weight: 66,
+            name: "Polaroids",
+            path: `${dir}/2-extra/polaroids_ur.png`,
+            weight: 60, // 15%
           },
           {
             id: 4,
-            name: "Bright Explosion",
-            path: `${dir}/2-extra/brightsplosion.png`,
-            weight: 65,
+            name: "Dinosaurs",
+            path: `${dir}/2-extra/dinosaurs_ur.png`,
+            weight: 45, // 15%
           },
           {
             id: 5,
             name: "Christmas Lights",
             path: `${dir}/2-extra/christmas lights.png`,
-            weight: 64,
+            weight: 30, // 15%
+          },
+          {
+            id: 5,
+            name: "Blue Explosion",
+            path: `${dir}/2-extra/blue explosions_r.png`,
+            weight: 15, // 15%
           },
         ],
         position: { x: 0, y: 0 },
@@ -118,43 +118,43 @@ const races = {
             id: 0,
             name: "TweeTheBee",
             path: `${dir}/3-character/TweeTheBee.png`,
-            weight: 70,
+            weight: 100, // 30%
           },
           {
             id: 1,
             name: "Twee Blue Wings",
             path: `${dir}/3-character/Twee Blue Wings.png`,
-            weight: 40,
+            weight: 70, // 15%
           },
           {
             id: 2,
             name: "Twee Pink Wings",
             path: `${dir}/3-character/Twee Pink Wings_r.png`,
-            weight: 30,
+            weight: 55, // 15%
           },
           {
             id: 3,
             name: "Twee Purple Wings",
             path: `${dir}/3-character/Twee Purple Wings_r.png`,
-            weight: 20,
+            weight: 40, // 15%
           },
           {
             id: 4,
             name: "Twee Green Wings",
             path: `${dir}/3-character/Twee Green Wings.png`,
-            weight: 10,
+            weight: 25, // 15%
           },
           {
             id: 5,
             name: "Twee Black Wings",
             path: `${dir}/3-character/Twee Black Wings_ur.png`,
-            weight: 3,
+            weight: 10, // 7%
           },
           {
             id: 6,
             name: "Twee Rainbow Wings",
             path: `${dir}/3-character/Twee Rainbow Wings_ur.png`,
-            weight: 1,
+            weight: 3, // 3%
           },
         ],
         position: { x: 0, y: 0 },
@@ -165,21 +165,21 @@ const races = {
         elements: [
           {
             id: 0,
-            name: "Acoustic Guitar",
-            path: `${dir}/4-prop/acoustic guitar.png`,
-            weight: 70,
+            name: "None",
+            path: `${dir}/4-prop/none.png`,
+            weight: 100, // 31%
           },
           {
             id: 1,
             name: "Viking Warhammer Stein",
             path: `${dir}/4-prop/viking warhammer stein_ur.png`,
-            weight: 69,
+            weight: 69, // 1%
           },
           {
             id: 2,
             name: "Fire Axe",
             path: `${dir}/4-prop/axe_r.png`,
-            weight: 68,
+            weight: 68, // 1%
           },
           {
             id: 3,
@@ -563,19 +563,19 @@ const races = {
             id: 66,
             name: "Acoustic Guitar Blue",
             path: `${dir}/4-prop/blue acoustic guitar_r.png`,
-            weight: 4,
+            weight: 4, // 1%
           },
           {
             id: 67,
             name: "Electric Bass",
             path: `${dir}/4-prop/electric bass guitar_r.png`,
-            weight: 3,
+            weight: 3, // 1.5%
           },
           {
             id: 68,
-            name: "None",
-            path: `${dir}/4-prop/none.png`,
-            weight: 2,
+            name: "Acoustic Guitar",
+            path: `${dir}/4-prop/acoustic guitar.png`,
+            weight: 1.5, // 1.5%
           },
         ],
         position: { x: 0, y: 0 },
@@ -588,49 +588,49 @@ const races = {
             id: 0,
             name: "Smile",
             path: `${dir}/5-expression/smile.png`,
-            weight: 70,
+            weight: 100, // 20%
           },
           {
             id: 1,
             name: "Surprised",
             path: `${dir}/5-expression/surprised.png`,
-            weight: 50,
+            weight: 80, // 12%
           },
           {
             id: 2,
             name: "Shocked",
             path: `${dir}/5-expression/shocked_r.png`,
-            weight: 42,
+            weight: 68, // 14%
           },
           {
             id: 3,
             name: "Indifferent",
             path: `${dir}/5-expression/neutral.png`,
-            weight: 34,
+            weight: 54, // 15%
           },
           {
             id: 4,
             name: "Laugh",
             path: `${dir}/5-expression/laugh_r.png`,
-            weight: 26,
+            weight: 39, // 14%
           },
           {
             id: 5,
             name: "Gasp",
             path: `${dir}/5-expression/gasp_r.png`,
-            weight: 19,
+            weight: 25, // 13%
           },
           {
             id: 6,
             name: "Biting Lip",
             path: `${dir}/5-expression/biting lip.png`,
-            weight: 12,
+            weight: 12, // 7%
           },
           {
             id: 7,
             name: "Fangs",
             path: `${dir}/5-expression/fangs_ur.png`,
-            weight: 5,
+            weight: 5, // 5%
           },
         ],
         position: { x: 0, y: 0 },
@@ -643,109 +643,43 @@ const races = {
             id: 0,
             name: "None",
             path: `${dir}/6-face/none.png`,
-            weight: 70,
+            weight: 100, // 20%
           },
           {
             id: 1,
-            name: "Bandaid",
-            path: `${dir}/6-face/bandaid.png`,
-            weight: 65,
+            name: "Bloody Swipe",
+            path: `${dir}/6-face/bloody swipe_r.png`,
+            weight: 80, // 15%
           },
           {
             id: 2,
-            name: "Bowtie Orange",
-            path: `${dir}/6-face/bowtie orange.png`,
-            weight: 61,
+            name: "Covid Mask",
+            path: `${dir}/6-face/facemask_r.png`,
+            weight: 65, // 15%
           },
           {
             id: 3,
-            name: "Bowtie Red",
-            path: `${dir}/6-face/bowtie red.png`,
-            weight: 57,
+            name: "Flame Scar",
+            path: `${dir}/6-face/flame scar_ur.png`,
+            weight: 50, // 15%
           },
           {
             id: 4,
-            name: "Bowtie Spotted",
-            path: `${dir}/6-face/bowtie spotted.png`,
-            weight: 53,
+            name: "Gas Mask",
+            path: `${dir}/6-face/gasmask_r.png`,
+            weight: 35, // 15%
           },
           {
             id: 5,
-            name: "Double Scratch",
-            path: `${dir}/6-face/double scratch.png`,
-            weight: 49,
+            name: "Mustache Italiano",
+            path: `${dir}/6-face/mustache italiano_r.png`,
+            weight: 20, // 10%
           },
           {
             id: 6,
-            name: "Lip Dirt",
-            path: `${dir}/6-face/lip dirt.png`,
-            weight: 45,
-          },
-          {
-            id: 7,
-            name: "Mustache",
-            path: `${dir}/6-face/mustache.png`,
-            weight: 41,
-          },
-          {
-            id: 8,
-            name: "Mustachio",
-            path: `${dir}/6-face/mustachio.png`,
-            weight: 37,
-          },
-          {
-            id: 9,
-            name: "Bloody Handprint",
-            path: `${dir}/6-face/bloody handprint_r.png`,
-            weight: 33,
-          },
-          {
-            id: 10,
-            name: "Bloody Swipe",
-            path: `${dir}/6-face/bloody swipe_r.png`,
-            weight: 29,
-          },
-          {
-            id: 11,
-            name: "Covid Mask",
-            path: `${dir}/6-face/facemask_r.png`,
-            weight: 25,
-          },
-          {
-            id: 12,
-            name: "Flame Scar",
-            path: `${dir}/6-face/flame scar_ur.png`,
-            weight: 21,
-          },
-          {
-            id: 13,
-            name: "Gas Mask",
-            path: `${dir}/6-face/gasmask_r.png`,
-            weight: 18,
-          },
-          {
-            id: 14,
-            name: "Kiss",
-            path: `${dir}/6-face/kiss_r.png`,
-            weight: 14,
-          },
-          {
-            id: 15,
-            name: "Mustache Italiano",
-            path: `${dir}/6-face/mustache italiano_r.png`,
-            weight: 10,
-          },
-          {
-            id: 16,
-            name: "Tribal Tattoo",
-            path: `${dir}/6-face/tribaltattoo_r.png`,
-            weight: 6,
-          },
-          {
-            id: 17,
             name: "Werewolf Swipe",
             path: `${dir}/6-face/werewolf swipe_ur.png`,
-            weight: 3,
+            weight: 10, // 10%
           },
         ],
         position: { x: 0, y: 0 },
@@ -758,211 +692,43 @@ const races = {
             id: 0,
             name: "None",
             path: `${dir}/7-eyewear/none.png`,
-            weight: 70,
+            weight: 100, // 20%
           },
           {
             id: 1,
-            name: "3D Glasses",
-            path: `${dir}/7-eyewear/3d glasses.png`,
-            weight: 68,
+            name: "Monocle",
+            path: `${dir}/7-eyewear/monocle_ur.png`,
+            weight: 80, // 15%
           },
           {
             id: 2,
-            name: "Clown Nose Glasses",
-            path: `${dir}/7-eyewear/clown nose glasses.png`,
-            weight: 66,
+            name: "Bleeding Eyes",
+            path: `${dir}/7-eyewear/bleeding eyes_ur.png`,
+            weight: 65, // 15%
           },
           {
             id: 3,
-            name: "Cucumber Eyes",
-            path: `${dir}/7-eyewear/cucumber eyes.png`,
-            weight: 64,
+            name: "Pirate Patch",
+            path: `${dir}/7-eyewear/pirate patch_r.png`,
+            weight: 50, // 15%
           },
           {
             id: 4,
-            name: "Diamond Eyes",
-            path: `${dir}/7-eyewear/diamond eyes.png`,
-            weight: 62,
+            name: "Ski Goggles",
+            path: `${dir}/7-eyewear/ski goggles_r.png`,
+            weight: 35, // 15%
           },
           {
             id: 5,
-            name: "False Nose Glasses",
-            path: `${dir}/7-eyewear/false nose glasses.png`,
-            weight: 60,
+            name: "Sunglasses Vacation",
+            path: `${dir}/7-eyewear/sunglasses vacation_r.png`,
+            weight: 20, // 15%
           },
           {
             id: 6,
-            name: "Heart Eyes",
-            path: `${dir}/7-eyewear/heart eyes.png`,
-            weight: 58,
-          },
-          {
-            id: 7,
-            name: "Heart Shaped Glasses Pink",
-            path: `${dir}/7-eyewear/heart shaped glasses pink.png`,
-            weight: 56,
-          },
-          {
-            id: 8,
-            name: "Heart Shaped Glasses",
-            path: `${dir}/7-eyewear/heart shaped glasses.png`,
-            weight: 54,
-          },
-          {
-            id: 9,
-            name: "Kaleidoscope Eyes",
-            path: `${dir}/7-eyewear/kaleidoscope eyes.png`,
-            weight: 52,
-          },
-          {
-            id: 10,
-            name: "Kaleidoscope Rainbow Eyes",
-            path: `${dir}/7-eyewear/kaleidoscope rainbow eyes.png`,
-            weight: 50,
-          },
-          {
-            id: 11,
-            name: "Peppermint Eyes",
-            path: `${dir}/7-eyewear/peppermint eyes.png`,
-            weight: 48,
-          },
-          {
-            id: 12,
-            name: "Purple Shades",
-            path: `${dir}/7-eyewear/purple shades.png`,
-            weight: 46,
-          },
-          {
-            id: 13,
-            name: "Raybans",
-            path: `${dir}/7-eyewear/raybans.png`,
-            weight: 44,
-          },
-          {
-            id: 14,
-            name: "Shutter Shades Blue",
-            path: `${dir}/7-eyewear/shutter shades blue.png`,
-            weight: 42,
-          },
-          {
-            id: 15,
-            name: "Shutter Shades Pink",
-            path: `${dir}/7-eyewear/shutter shades pink.png`,
-            weight: 40,
-          },
-          {
-            id: 16,
-            name: "Shutter Shades",
-            path: `${dir}/7-eyewear/shutter shades.png`,
-            weight: 38,
-          },
-          {
-            id: 17,
-            name: "Sunglasses Red",
-            path: `${dir}/7-eyewear/sunglasses red.png`,
-            weight: 36,
-          },
-          {
-            id: 18,
-            name: "Sunglasses Vintage",
-            path: `${dir}/7-eyewear/sunglasses vintage.png`,
-            weight: 34,
-          },
-          {
-            id: 19,
-            name: "Tear Drop Tattoo",
-            path: `${dir}/7-eyewear/tear drop tattoo.png`,
-            weight: 32,
-          },
-          {
-            id: 20,
-            name: "Weed Eyes",
-            path: `${dir}/7-eyewear/weed eyes.png`,
-            weight: 30,
-          },
-          {
-            id: 21,
-            name: "Yellow Shades",
-            path: `${dir}/7-eyewear/yellow shades.png`,
-            weight: 28,
-          },
-          {
-            id: 22,
-            name: "Donut Eyes",
-            path: `${dir}/7-eyewear/donut eyes_r.png`,
-            weight: 26,
-          },
-          {
-            id: 23,
-            name: "Bleeding Eyes",
-            path: `${dir}/7-eyewear/bleeding eyes_ur.png`,
-            weight: 24,
-          },
-          {
-            id: 24,
-            name: "Fabulous",
-            path: `${dir}/7-eyewear/fabulous_r.png`,
-            weight: 22,
-          },
-          {
-            id: 25,
-            name: "Masquerade",
-            path: `${dir}/7-eyewear/masquerade_r.png`,
-            weight: 20,
-          },
-          {
-            id: 26,
-            name: "Monocle",
-            path: `${dir}/7-eyewear/monocle_ur.png`,
-            weight: 18,
-          },
-          {
-            id: 27,
-            name: "Pirate Patch",
-            path: `${dir}/7-eyewear/pirate patch_r.png`,
-            weight: 16,
-          },
-          {
-            id: 28,
-            name: "Scar",
-            path: `${dir}/7-eyewear/scar_r.png`,
-            weight: 14,
-          },
-          {
-            id: 29,
-            name: "Scuba",
-            path: `${dir}/7-eyewear/scuba_r.png`,
-            weight: 12,
-          },
-          {
-            id: 30,
-            name: "Ski Goggles",
-            path: `${dir}/7-eyewear/ski goggles_r.png`,
-            weight: 10,
-          },
-          {
-            id: 31,
-            name: "Sunglasses Beach",
-            path: `${dir}/7-eyewear/sunglasses beach_r.png`,
-            weight: 8,
-          },
-          {
-            id: 32,
-            name: "Sunglasses Cityscape",
-            path: `${dir}/7-eyewear/sunglasses cityscape_r.png`,
-            weight: 6,
-          },
-          {
-            id: 33,
-            name: "Sunglasses Vacation",
-            path: `${dir}/7-eyewear/sunglasses vacation_r.png`,
-            weight: 4,
-          },
-          {
-            id: 34,
             name: "Sasuke Eye",
             path: `${dir}/7-eyewear/sasuke eye_ur.png`,
-            weight: 2,
+            weight: 5, // 5%
           },
         ],
         position: { x: 0, y: 0 },
@@ -975,272 +741,38 @@ const races = {
             id: 0,
             name: "Antennas",
             path: `${dir}/8-headpiece/antenna.png`,
-            weight: 70,
+            weight: 100, // 25%
           },
           {
             id: 1,
-            name: "None",
-            path: `${dir}/8-headpiece/none.png`,
-            weight: 65,
+            name: "Witch Hat",
+            path: `${dir}/8-headpiece/witchhat.png`,
+            weight: 75, // 20%
           },
           {
             id: 2,
-            name: "Captains Hat",
-            path: `${dir}/8-headpiece/captains hat.png`,
-            weight: 60,
+            name: "Dog Filter",
+            path: `${dir}/8-headpiece/dog filter_r.png`,
+            weight: 55, // 15%
           },
           {
             id: 3,
-            name: "Chef Hat",
-            path: `${dir}/8-headpiece/chefhat.png`,
-            weight: 58,
+            name: "Pirate Hat",
+            path: `${dir}/8-headpiece/pirate hat_r.png`,
+            weight: 40, // 15%
           },
           {
             id: 4,
-            name: "Cowboy Hat",
-            path: `${dir}/8-headpiece/cowboy hat.png`,
-            weight: 56,
+            name: "Crown of Thorns",
+            path: `${dir}/8-headpiece/crown of thorns.png`,
+            weight: 25, // 15%
           },
           {
             id: 5,
-            name: "Dinner Party Hat",
-            path: `${dir}/8-headpiece/dinner party hat.png`,
-            weight: 54,
-          },
-          {
-            id: 6,
-            name: "Fire Fighter",
-            path: `${dir}/8-headpiece/fire fighter.png`,
-            weight: 52,
-          },
-          {
-            id: 7,
-            name: "Flower Crown",
-            path: `${dir}/8-headpiece/flower crown.png`,
-            weight: 50,
-          },
-          {
-            id: 8,
-            name: "Gentlemans Hat",
-            path: `${dir}/8-headpiece/gentlemans hat.png`,
-            weight: 47,
-          },
-          {
-            id: 9,
-            name: "Leprechaun Hat",
-            path: `${dir}/8-headpiece/leprechaun.png`,
-            weight: 45,
-          },
-          {
-            id: 10,
-            name: "Birthday Cactus Hat",
-            path: `${dir}/8-headpiece/birthday cactus hat.png`,
-            weight: 43,
-          },
-          {
-            id: 11,
-            name: "Nurse Hat",
-            path: `${dir}/8-headpiece/nurse hat.png`,
-            weight: 41,
-          },
-          {
-            id: 12,
-            name: "Party Hat",
-            path: `${dir}/8-headpiece/party hat.png`,
-            weight: 39,
-          },
-          {
-            id: 13,
-            name: "Police Hat",
-            path: `${dir}/8-headpiece/police hat.png`,
-            weight: 38,
-          },
-          {
-            id: 14,
-            name: "Red Hat Society",
-            path: `${dir}/8-headpiece/red hat society.png`,
-            weight: 36,
-          },
-          {
-            id: 15,
-            name: "Reindeer Antlers Pink",
-            path: `${dir}/8-headpiece/reindeer pink.png`,
-            weight: 35,
-          },
-          {
-            id: 16,
-            name: "Reindeer Antlers",
-            path: `${dir}/8-headpiece/reindeer.png`,
-            weight: 34,
-          },
-          {
-            id: 17,
-            name: "Rose Crown",
-            path: `${dir}/8-headpiece/rose crown.png`,
-            weight: 32,
-          },
-          {
-            id: 18,
-            name: "Sailor Hat",
-            path: `${dir}/8-headpiece/sailor hat.png`,
-            weight: 31,
-          },
-          {
-            id: 19,
-            name: "Santa Hat",
-            path: `${dir}/8-headpiece/santa hat.png`,
-            weight: 30,
-          },
-          {
-            id: 20,
-            name: "Silver Hat",
-            path: `${dir}/8-headpiece/silver hat.png`,
-            weight: 28,
-          },
-          {
-            id: 21,
-            name: "Tiara",
-            path: `${dir}/8-headpiece/tiara.png`,
-            weight: 26,
-          },
-          {
-            id: 22,
-            name: "Unclesam Hat",
-            path: `${dir}/8-headpiece/unclesam hat.png`,
-            weight: 24,
-          },
-          {
-            id: 23,
-            name: "Witch Hat",
-            path: `${dir}/8-headpiece/witchhat.png`,
-            weight: 22,
-          },
-          {
-            id: 24,
-            name: "Wizard Hat",
-            path: `${dir}/8-headpiece/wizardhat.png`,
-            weight: 21,
-          },
-          {
-            id: 25,
-            name: "Birthday Hat",
-            path: `${dir}/8-headpiece/birthday hat_r.png`,
-            weight: 20,
-          },
-          {
-            id: 26,
-            name: "Bunny Ears",
-            path: `${dir}/8-headpiece/bunnyears_r.png`,
-            weight: 19,
-          },
-          {
-            id: 27,
-            name: "Thorn Crown",
-            path: `${dir}/8-headpiece/crown of thorns.png`,
-            weight: 18,
-          },
-          {
-            id: 28,
-            name: "Dog Filter",
-            path: `${dir}/8-headpiece/dog filter_r.png`,
-            weight: 17,
-          },
-          {
-            id: 29,
-            name: "Gold Hat",
-            path: `${dir}/8-headpiece/gold hat_r.png`,
-            weight: 16,
-          },
-          {
-            id: 30,
-            name: "Halo",
-            path: `${dir}/8-headpiece/halo_r.png`,
-            weight: 15,
-          },
-          {
-            id: 31,
-            name: "Horns",
-            path: `${dir}/8-headpiece/horns_r.png`,
-            weight: 14,
-          },
-          {
-            id: 32,
-            name: "Jester Hat",
-            path: `${dir}/8-headpiece/jester hat_r.png`,
-            weight: 13,
-          },
-          {
-            id: 33,
-            name: "King Crown",
-            path: `${dir}/8-headpiece/king crown_ur.png`,
-            weight: 12,
-          },
-          {
-            id: 34,
-            name: "Madhatter",
-            path: `${dir}/8-headpiece/madhatter_r.png`,
-            weight: 11,
-          },
-          {
-            id: 35,
-            name: "Pirate Hat",
-            path: `${dir}/8-headpiece/pirate hat_r.png`,
-            weight: 10,
-          },
-          {
-            id: 36,
-            name: "Pumpkin Head",
-            path: `${dir}/8-headpiece/pumpkin head_ur.png`,
-            weight: 9,
-          },
-          {
-            id: 37,
-            name: "Queen Crown",
-            path: `${dir}/8-headpiece/queen crown_r.png`,
-            weight: 8,
-          },
-          {
-            id: 38,
-            name: "Rainbow Frow",
-            path: `${dir}/8-headpiece/rainbow frow_r.png`,
-            weight: 7,
-          },
-          {
-            id: 39,
-            name: "Reindeer Crown",
-            path: `${dir}/8-headpiece/reindeer crown_ur.png`,
-            weight: 6,
-          },
-          {
-            id: 40,
             name: "Steampunk Hat",
             path: `${dir}/8-headpiece/steampunk hat_r.png`,
-            weight: 5,
-          },
-          {
-            id: 41,
-            name: "Viking Cap",
-            path: `${dir}/8-headpiece/viking helmet_r.png`,
-            weight: 4,
-          },
-          {
-            id: 42,
-            name: "Unircorn Crown",
-            path: `${dir}/8-headpiece/unicorn crown_ur.png`,
-            weight: 3,
-          },
-          {
-            id: 43,
-            name: "Crown of Thorns",
-            path: `${dir}/8-headpiece/crown of thorns_r.png`,
-            weight: 2,
-          },
-          {
-            id: 44,
-            name: "Viking Helmet",
-            path: `${dir}/8-headpiece/viking helmet_ur.png`,
-            weight: 1,
-          },
+            weight: 10, // 10%
+          },          
         ],
         position: { x: 0, y: 0 },
         size: { width: width, height: height },
