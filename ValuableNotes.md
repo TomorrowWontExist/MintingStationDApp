@@ -42,7 +42,7 @@ How to install NPM https://docs.npmjs.com/downloading-and-installing-node-js-and
 How to install .Git https://phoenixnap.com/kb/how-to-install-git-windows<p/>
 How to install Ganache https://www.trufflesuite.com/docs/ganache/quickstart<p/>
 How to isntall Yarn https://classic.yarnpkg.com/en/docs/install/#windows-stable<p/>
-<p/>
+How to install IPFS https://ipfs.io/#install<p/>
 Also make an Account at Github.com - You're going to need this!
 <p/><p/>
 How to install React App to Node https://github.com/gitname/react-gh-pages<p/>
