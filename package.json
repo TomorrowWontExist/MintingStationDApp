@@ -1,0 +1,19 @@
+{
+  "name": "fullstackmassivenftdevelopment",
+  "version": "1.0.0",
+  "description": "Follow along with the video for a Streamlined Dummy version A-Z how to make your art into a randomly generated Massive NFT Collection, without any code or crypto knowledge!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ScrawnyViking/FullstackMassiveNFTDevelopment.git"
+  },
+  "author": "ScrawnyViking aka TWECryptoDev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ScrawnyViking/FullstackMassiveNFTDevelopment/issues"
+  },
+  "homepage": "https://github.com/ScrawnyViking/FullstackMassiveNFTDevelopment#readme"
+}
