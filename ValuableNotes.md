@@ -43,6 +43,7 @@ How to install .Git https://phoenixnap.com/kb/how-to-install-git-windows<p/>
 How to install Ganache https://www.trufflesuite.com/docs/ganache/quickstart<p/>
 How to isntall Yarn https://classic.yarnpkg.com/en/docs/install/#windows-stable<p/>
 <p/>
+Also make an Account at Github.com - You're going to need this!
 <p/><p/>
 How to install React App to Node https://github.com/gitname/react-gh-pages<p/>
 npm install gh-pages --save-dev // Deploying Front End Dapp (minting station) to Github<p/>
@@ -88,9 +89,9 @@ Add these to lines 33-34<p/>
     "predeploy": "npm run build",<p/>
     "deploy": "gh-pages -d build"<p/>
     <p/>
-ABI Code goes into Contract folder, replace TBCNFTABI.json with yours (copy ABI from remix compile page)<p/>
+ABI Code goes into Contract folder, replace TBCNFTABI.json with yours (copy ABI from remix compile page) This is optional, our ABI codes are Exactly the same if you don't alter the code.
 
-Make ico file for Favicon and replace it in the Public folder, Also replace images 192x and 512x<p/>
+Make ico file for Favicon and replace it in the Public folder, Also replace images 192x and 512x<p/> Make ICO file by opening Logo with Paint, saving it as BMP 24bit and adding .ico to the end of the file. Replace the file in the Directory with the current one.
 <p/>
 Alter App.js and Index.js to fit your project<p/>
 <p/>
@@ -101,5 +102,7 @@ finally... <p/>
 npm run deploy<p/>
 git add .<p/>
 git commit -m "description message"<p/>
-git push origin main<p/>
+git push origin<p/>
 <p/>
+
+MAC USERS : if you have problem getting IPFS to run in this terminal, check this out https://m.youtube.com/watch?v=xoZ1v7G_ZFg&t=198s
