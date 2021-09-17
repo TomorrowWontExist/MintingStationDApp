@@ -1,12 +1,12 @@
 const fs = require("fs");
-const width = 750; // Change to the resolution you want
+const width = 750; // Change to the resolution you want 1000 x 1000 is common
 const height = 1200;
 const dir = __dirname;
 const description = "This NFT is part of The Bee Collaborative Collection | Save the Bees with NFTs!";
 const baseImageUri = "https://gateway.ipfs.io/ipns/k51qzi5uqu5dhl0enp0dupzorbyhsmsdj1aewjbghr0se5kb1w1s65dof038g5";
-const startEditionFrom = 1; // Can start edition at whatever you want 
+const startEditionFrom = 1; // 
 const endEditionAt = 10; // endEditionAt and edtionSize MUST be the SAME // start at 10 for testing purposes
-const editionSize = 10; // this will print 100 copies : (use if you already have a 10k 1 1st edition)
+const editionSize = 10; // this will print 10 copies
 const raceWeights = [
   {
     value: "TweeTheBee", // Change to whatever you want
@@ -17,7 +17,7 @@ const raceWeights = [
 
 const races = {
   TweeTheBee: { // Must bee the same as value on line 12 | ALL CAPITALIZATIONS MATTER
-    name: "TweeTheBee", // Make same as above
+    name: "TweeTheBee", // Make same as above | This is just a skeleton, more characters/skins can be added later
     layers: [
       {
         name: "Background",
@@ -203,7 +203,7 @@ const races = {
             id: 6,
             name: "Sword",
             path: `${dir}/4-prop/sword_r.png`,
-            weight: 64,
+            weight: 64, // 1%
           },
           {
             id: 7,
@@ -233,7 +233,7 @@ const races = {
             id: 11,
             name: "Scepter",
             path: `${dir}/4-prop/scepter_r.png`,
-            weight: 59,
+            weight: 59, // 1%
           },
           {
             id: 12,
@@ -287,7 +287,7 @@ const races = {
             id: 20,
             name: "Xbox Controller",
             path: `${dir}/4-prop/controller_r.png`,
-            weight: 5,
+            weight: 50,
           },
           {
             id: 21,
@@ -311,7 +311,7 @@ const races = {
             id: 24,
             name: "Beer",
             path: `${dir}/4-prop/beer_r.png`,
-            weight: 46,
+            weight: 46, // 1%
           },
           {
             id: 25,
@@ -335,7 +335,7 @@ const races = {
             id: 28,
             name: "Taco",
             path: `${dir}/4-prop/taco.png`,
-            weight: 42,
+            weight: 42, // 1%
           },
           {
             id: 29,
