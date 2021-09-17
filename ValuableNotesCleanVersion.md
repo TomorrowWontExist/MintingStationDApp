@@ -81,10 +81,10 @@ Change price of each NFT line 71
 
 How to Deploy DAPP the EASY way with free github.io domain https://www.youtube.com/watch?v=pYHTCmhK734 
 
-Add github.io free hosting domain to package.json line 27 
+Add github.io free hosting domain to package.json line 27 // Already done, change to your own
 "homepage": "http://TomorrowWontExist.github.io/tbcnft", // "username".github.io/"repo" 
 
-Add these to lines 33-34
+Add these to lines 33-34 // Already done for you in this code
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
     
@@ -101,5 +101,5 @@ finally...
 npm run deploy
 git add .
 git commit -m "description message"
-git push origin main
+git push origin // If your 
 

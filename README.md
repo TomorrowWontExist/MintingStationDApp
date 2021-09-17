@@ -8,4 +8,4 @@ Join the TheBeeCollaborative Community @TBCToken in Telegram
 
 Look at ValuableNote.md for some easy to remember and copy/pasteable tips
 
-Please Like Subscribe and Comment on this video, it HELPS SO MUCH!
+Please Like Subscribe and Comment on this video, it HELPS SO MUCH!!
