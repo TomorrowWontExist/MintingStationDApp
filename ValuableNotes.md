@@ -49,6 +49,7 @@ How to install React App to Node https://github.com/gitname/react-gh-pages<p/>
 npm install gh-pages --save-dev // Deploying Front End Dapp (minting station) to Github<p/>
 <p/>
 Need to know commands... <p/>
+node index.js
 <p/>
 npm install -g npm<p/>
 npm install<p/>
