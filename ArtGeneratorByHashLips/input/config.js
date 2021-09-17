@@ -38,7 +38,7 @@ const races = {
             id: 2,
             name: "Lightening",
             path: `${dir}/1-background/lightening_r.png`,
-            weight: 68, // 17%  --  68 + 17% = 84 Weight of the next one up
+            weight: 68, // 17% 
           },
           {
             id: 3,
