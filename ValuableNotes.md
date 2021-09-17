@@ -36,7 +36,7 @@ https://testnets-api.opensea.io/asset/<your_contract_address>/<your_token_id>/va
 https://api.opensea.io/asset/<your_contract_address>/<your_token_id>/validate/<p/>
 <p/>
 <p/><p/><p/>
-Pre Req Downloads<p/> DOWN LOAD EVERYTHING HERE BEFORE YOU BEGIN!!! THEN RESTART PC!
+Pre Req Downloads<p/> DOWN LOAD EVERYTHING HERE BEFORE YOU BEGIN!!! THEN RESTART Terminal!
 How to install node.js https://nodejs.org/en/download/<p/>
 How to install NPM https://docs.npmjs.com/downloading-and-installing-node-js-and-npm<p/>
 How to install .Git https://phoenixnap.com/kb/how-to-install-git-windows<p/>
