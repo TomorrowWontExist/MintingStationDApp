@@ -58,6 +58,7 @@ npm install<p/>
 npm init // initialize (this is how setup your directory and give project description)<p/>
 npm run deploy // Use for this Dapp<p/>
 npm run build<p/>
+npm start<p/> // Opens your local Host for viewing your work *you want this open all the time*
 <p/>
 git clone (repo copy/paste)<p/>
 git init<p/>
