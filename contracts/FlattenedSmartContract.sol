@@ -1221,24 +1221,24 @@ abstract contract Ownable is Context {
 
 pragma solidity ^0.8.0;
 
-contract TheBeeCollaborative is ERC721Enumerable, Ownable {
+contract TheBeeCollaborative is ERC721Enumerable, Ownable { // contract name to yours
   using Strings for uint256;
 
   string public baseURI;
   string public baseExtension = ".json";
-  uint256 public cost = .02 ether;
-  uint256 public maxSupply = 10000;
-  uint256 public maxMintAmount = 10;
+  uint256 public cost = .02 ether; // change price per unit
+  uint256 public maxSupply = 10000; // max supply, contract will stop minting after this amount is reach in your open sea colection
+  uint256 public maxMintAmount = 10; // max allowed to mint at one time N.O.T.E must be => than line 1241 - mint(msg.sender, 10);
   bool public paused = false;
   mapping(address => bool) public whitelisted;
 
   constructor(
-    string memory _name,
-    string memory _symbol,
-    string memory _initBaseURI
+    string memory _name,   // String are annoying and we will need an ABI code to verify contract because of this
+    string memory _symbol, // you'll change these 3 strings next to your deployment button
+    string memory _initBaseURI // this is your /IPFS/CID of NFT .pngs and .jsons | Your IPNS is stored inside your .jsons
   ) ERC721(_name, _symbol) {
     setBaseURI(_initBaseURI);
-    mint(msg.sender, 10);
+    mint(msg.sender, 10); // Must be lower than line 1231 | This is how many is minted FREE to owner upon deployment
   }
 
   // internal
