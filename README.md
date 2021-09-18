@@ -44,9 +44,9 @@ git init
 
 if it prompts questions, press enter through the end.
 
-git remote add origin https://github.com/gitname/<repository>
+git remote add origin https://github.com/<username>/<repository>
 git remote -v
-npm run deploy
+npm run deploy // This runs the App and launches your DApp onto the github hosted Domain
 
 You should now have a 2nd branch in your Repo named gh-pages.
 
