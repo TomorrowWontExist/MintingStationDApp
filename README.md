@@ -25,7 +25,7 @@ Go to package.json line 27 and change homepage to yours.
 run command...
 git init
 
-if it prompts questions, press enter through the end
+if it prompts questions, press enter through the end.
 
 git remote add origin https://github.com/gitname/<repository>
 git remote -v
