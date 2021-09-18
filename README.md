@@ -31,7 +31,7 @@ git remote add origin https://github.com/gitname/<repository>
 git remote -v
 npm run deploy
 
-You should now havae a 2nd branch in your Repo named gh-pages.
+You should now have a 2nd branch in your Repo named gh-pages.
 
 git add --all // git add .
 git commit -m "<message/description>"
