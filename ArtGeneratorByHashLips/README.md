@@ -9,3 +9,7 @@ Join the TheBeeCollaborative Community @TBCToken in Telegram
 Look at ValuableNote.md for some easy to remember and copy/pasteable tips
 
 Please Like Subscribe and Comment on this video, it HELPS SO MUCH!
+
+***START HERE***
+
+Don't want # images on top left? Goto line 163 of Index.js and // in front of SignImage<p/>
