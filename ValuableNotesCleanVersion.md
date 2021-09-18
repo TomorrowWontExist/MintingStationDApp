@@ -35,15 +35,6 @@ https://testnets-api.opensea.io/asset/<your_contract_address>/<your_token_id>/va
 
 https://api.opensea.io/asset/<your_contract_address>/<your_token_id>/validate/
 
-
-Pre Req Downloads
-How to install node.js https://nodejs.org/en/download/
-How to install NPM https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
-How to install .Git https://phoenixnap.com/kb/how-to-install-git-windows
-How to install Ganache https://www.trufflesuite.com/docs/ganache/quickstart
-How to isntall Yarn https://classic.yarnpkg.com/en/docs/install/#windows-stable
-
-
 How to install React App to Node https://github.com/gitname/react-gh-pages
 npm install gh-pages --save-dev // Deploying Front End Dapp (minting station) to Github
 
@@ -52,7 +43,7 @@ Need to know commands...
 npm install -g npm
 npm install
 npm init // initialize (this is how setup your directory and give project description)
-npm run deploy // Use for this Dapp
+npm run deploy // Use for this Dapp to deploy to Github
 npm run build
 
 git clone (repo copy/paste)
@@ -69,6 +60,8 @@ git push --force origin main (master) // last resort
 
 yarn install // Try not to mix npm and yarn in the same terminal
 yarn add all // only use yarn add all if git clone and npm install fails
+
+ipfs name resolve
 
 Ethereum netowrk = 1  // Change this in blockchainActions.js line 54
 Rinkby = 4
