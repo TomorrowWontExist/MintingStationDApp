@@ -1,6 +1,6 @@
 {
   "name": "fullstackmassivenftdevelopment",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Follow along with the video for a Streamlined Dummy version A-Z how to make your art into a randomly generated Massive NFT Collection, without any code or crypto knowledge!",
   "main": "index.js",
   "scripts": {
