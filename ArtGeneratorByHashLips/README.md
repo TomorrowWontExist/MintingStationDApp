@@ -16,7 +16,7 @@ Don't want # images on top left? Goto line 163 of Index.js and // in front of Si
 
 Follow along the video for quick how tos, reference them later! 
 
-BEE CAREFUL what you change when adding your own art files to the ARt Generator... 1 type, capitilzation, space, or missing . can completely break the code!
+BEE CAREFUL what you change when adding your own art files to the ARt Generator... 1 typo, capitilzation error, space, or missing . can completely break the code!
 
-Always test your changes before doing too much work! us...
+Always test your changes before doing too much work! use...
 node index.js // to  make sure 10 copies still print and code isnt broken
