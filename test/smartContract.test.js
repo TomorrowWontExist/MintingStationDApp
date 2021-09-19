@@ -17,7 +17,7 @@ contract("SmartContract", (accounts) => {
     });
 
     it("has correct name", async () => {
-      const name = await smartContract.name();
+      const name = await smartContract.name(); //
       assert.equal(name, "Smart Contract");
     });
   });
