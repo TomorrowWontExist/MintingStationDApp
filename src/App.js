@@ -205,7 +205,7 @@ function App() {
           </s.TextDescription>
           <s.SpacerSmall />
           <s.TextDescription style={{ textAlign: "center", fontSize: 14 }}>
-            Bee Rewarded to help Save the Bees #TBCToken<p/>*.*.*Launching Soon*.*.*
+            Bee Rewarded to help Save the Bees #TBCToken<p/>*.*.*Launching_Soon*.*.*
           </s.TextDescription>
         </s.Container>
       </s.Container>
